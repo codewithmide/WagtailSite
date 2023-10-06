@@ -36,13 +36,13 @@ Follow these steps to run "My First Wagtail Site" on your local machine:
 git clone https://github.com/codewithmide/WagtailSite
 ```
 
-1. **Navigate to the Project Folder:**
+2. **Navigate to the Project Folder:**
 
 ```bash
 cd myfirstwagtailsite
 ```
 
-1. **Create a Virtual Environment (Optional)**: It's recommended to create a virtual environment for this project. If you choose to create one, use the following commands:
+3. **Create a Virtual Environment (Optional)**: It's recommended to create a virtual environment for this project. If you choose to create one, use the following commands:
 
 ```bash
 python -m venv mysite/env
@@ -64,33 +64,32 @@ mysite\env\Scripts\activate.bat
 mysite\env\Scripts\activate
 ```
 
-1. **Install Dependencies**:
+4. **Install Dependencies**:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-1. **Apply Migrations**:
+5. **Apply Migrations**:
 
 ```bash
 python manage.py migrate
 ```
 
-1. **Create a Superuser**: This prompts you to create a new admin user account with full permissions. It’s important to note that for security reasons, the password text won’t be visible while typing.
+6. **Create a Superuser**: This prompts you to create a new admin user account with full permissions. It’s important to note that for security reasons, the password text won’t be visible while typing.
 
 ```bash
 python manage.py createsuperuser
 ```
 
-1. **Run the Development Server**:
+7. **Run the Development Server**:
 
 ```bash
 python manage.py runserver
 ```
 
 The development server will start, and you can access the site at `http://localhost:8000/`.
-
-1. **Access the Wagtail Admin Interface**: To access the Wagtail admin interface and start managing your site's content, go to `http://localhost:8000/admin/` and log in with the superuser credentials you created earlier.
+8. **Access the Wagtail Admin Interface**: To access the Wagtail admin interface and start managing your site's content, go to `http://localhost:8000/admin/` and log in with the superuser credentials you created earlier.
 
 That's it! You now have "My First Wagtail Site" up and running on your local machine. Feel free to explore the code, customize the templates, and add your own content to make it your own.
 
